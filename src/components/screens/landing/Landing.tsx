@@ -11,7 +11,7 @@ export const Landing = () => {
                 <Rating className="rating-stars" value={5} readOnly />
                 <p className="rating-text">+ 10.000 personas potenciadas</p>
             </div>
-            <img className="landing-image" src="src/assets/Mango.png" alt="landing" />
+            <img className="landing-image" src="/assets/Mango.png" alt="landing" />
             <p className="landing-description">Una combinacion ideal de vitaminas, nootropicos y nutrientes para un mejor rendimiento</p>
             <CustomButton />
             <Reviews />
