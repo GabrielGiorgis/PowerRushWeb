@@ -1,0 +1,40 @@
+.info-card{
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 650px;
+    padding: 8px 16px;
+    background-color: #00C08B;
+    box-shadow: 4px 4px 0px #FAFAFA;
+    border: 1px solid #FAFAFA;
+    transition: all 0.2s ease-in-out;
+}
+.info-card:hover{
+    box-shadow: 0px 0px 0px #FAFAFA;
+    transition: all 0.2s ease-in-out;
+}
+.info-card-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.info-card-icon{
+    max-width: 50px;
+    width: 10vw;
+}
+.info-card-title{
+    font-size: clamp(1.2rem, 1.7vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: start;
+}
+.info-card-description{
+    font-size: clamp(1.2rem, 1.7vw, 3rem);
+    font-weight: 500;
+    text-align: start;
+}

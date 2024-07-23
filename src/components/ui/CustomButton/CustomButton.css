@@ -1,0 +1,26 @@
+.custom-button{
+    display: inline-flex;
+    background-color: #00C08B;
+    padding: 4px 8px;
+    width: auto;
+    text-align: center;
+    box-shadow: 2px 2px 0px 0px #FAFAFA;
+    border: 1px solid #FAFAFA;
+    color : #1e1e1e;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.custom-button:hover{
+    background-color: #FAFAFA;
+    color: #00C08B;
+    box-shadow: #00C08B 0px 0px 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.custom-button p{
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}

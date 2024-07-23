@@ -1,0 +1,21 @@
+.carousel {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 0;
+    width: 100%;
+}
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    color: #00C08B;
+    padding: 8px; /* Añadir padding para mejorar la accesibilidad en pantallas táctiles */
+}
+
+.carousel-content {
+    display: inline-flex;
+    max-width: 100%;
+    padding: 8px 16px;
+    text-align: center; /* Asegurar que el contenido esté centrado */
+}

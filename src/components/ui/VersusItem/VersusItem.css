@@ -1,0 +1,27 @@
+.versus-item-icon{
+    max-width: 50px;
+    width: 8vw;
+    height: auto;
+}
+.versus-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    gap: 5vw;
+}
+.versus-item-text, .versus-item-text2{
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px 8px;
+}
+.versus-item-text{
+    text-align: end;
+}
+.versus-item-text2{
+    text-align: start;
+}
