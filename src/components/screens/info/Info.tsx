@@ -1,12 +1,12 @@
 import { InfoCard } from "../../ui/infoCard/InfoCard";
-import healthIcon from '/src/assets/icons/health-insurance-svgrepo-com.svg';
-import speedIcon from '/src/assets/icons/speed-svgrepo-com.svg';
-import energyIcon from '/src/assets/icons/energy-svgrepo-com.svg';
-import energyWhite from '/src/assets/icons/energy-svgrepo-white.svg';
-import brainIcon from '/src/assets/icons/brain-illustration-4-svgrepo-com.svg';
-import cashIcon from '/src/assets/icons/money-svgrepo-com.svg';
-import candyIcon from '/src/assets/icons/candy-svgrepo-com.svg';
-import eyeIcon from '/src/assets/icons/eye-svgrepo-com.svg';
+import healthIcon from '/assets/icons/health-insurance-svgrepo-com.svg';
+import speedIcon from '/assets/icons/speed-svgrepo-com.svg';
+import energyIcon from '/assets/icons/energy-svgrepo-com.svg';
+import energyWhite from '/assets/icons/energy-svgrepo-white.svg';
+import brainIcon from '/assets/icons/brain-illustration-4-svgrepo-com.svg';
+import cashIcon from '/assets/icons/money-svgrepo-com.svg';
+import candyIcon from '/assets/icons/candy-svgrepo-com.svg';
+import eyeIcon from '/assets/icons/eye-svgrepo-com.svg';
 import './Info.css'
 import { VersusItem } from "../../ui/VersusItem/VersusItem";
 
@@ -70,8 +70,8 @@ export const Info = () => {
                     <h3 className="versus-title">¿POR QUE ELEGIRNOS?</h3>
                     <div className="versus-items">
                         <div className="versus-items-images">
-                            <img className="versus-image" src="src/assets/OnlyMango.png" alt="Mango" />
-                            <img className="versus-image" src="src/assets/latasola.png" alt="Mango" />
+                            <img className="versus-image" src="/assets/OnlyMango.png" alt="Mango" />
+                            <img className="versus-image" src="/assets/latasola.png" alt="Lata" />
                         </div>
                         <div className="versus-items-text">
                             {versusItems.map((item) => (
