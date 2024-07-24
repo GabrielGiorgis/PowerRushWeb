@@ -23,7 +23,7 @@
   .content{ 
     display: flex;
     width: 30vw;
-    height: 15vh; /* tener en cuenta modificar para hacerlo mas dinamico */
+    height: auto; /* tener en cuenta modificar para hacerlo mas dinamico */
     flex-direction: column;
     justify-content: center;
     padding: 8px;
