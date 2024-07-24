@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: 1e1e1e;
     padding: 8px 16px;
-    width: 100%;
+    width: max-content;
     border: 1px solid #00C08B;
   }
   
@@ -16,8 +16,17 @@
   }
   
   .star {
-    height: 1.25rem;
-    width: 1.25rem;
+    width: 3vw;
+    max-width: 35px;
+  }
+
+  .content{ 
+    display: flex;
+    width: 30vw;
+    height: 15vh; /* tener en cuenta modificar para hacerlo mas dinamico */
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
   }
   
   .description {
@@ -32,4 +41,11 @@
     line-height: 1.25rem;
     color: #FAFAFA;
     text-align: end;
+  }
+
+  .infos{
+    display: flex;
+    width: 30vw;
+    height: max-content;
+    max-width: max-content;
   }

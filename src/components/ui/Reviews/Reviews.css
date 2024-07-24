@@ -2,8 +2,11 @@
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    padding: 4px 0;
+    align-items: center;
+    padding: 4px;
     width: 100%;
+    max-width: max-content;
+    height: 25vh;
 }
 
 .carousel-button {
@@ -15,7 +18,8 @@
 
 .carousel-content {
     display: inline-flex;
-    max-width: 100%;
+    width: 100%;
+    height: max-content;
     padding: 8px 16px;
-    text-align: center; /* Asegurar que el contenido esté centrado */
+    text-align: start;
 }

@@ -3,6 +3,7 @@
     background-color: #00C08B;
     padding: 4px 8px;
     width: auto;
+    max-width: fit-content;
     text-align: center;
     box-shadow: 2px 2px 0px 0px #FAFAFA;
     border: 1px solid #FAFAFA;

@@ -1,4 +1,4 @@
-import { ArrowForwardIos } from "@mui/icons-material"
+import {Info } from "@mui/icons-material"
 import { useState } from "react"
 
 import './InfoCard.css'
@@ -17,12 +17,15 @@ export const InfoCard = ({ name, description, icon }: IInfoCard) => {
     }
 
     return (
-        <div className="info-card">
+        <div className={!show ? "info-card" : "info-card-flip"}>
             <div className="info-card-line">
                 <img className="info-card-icon" src={icon} />
                 {!show ? <p className="info-card-title">{name}</p> : <p className="info-card-description">{description}</p>}
             </div>
-            <ArrowForwardIos className="info-card-arrow" onClick={handleClick} />
+            {show ?
+                <Info className="info-card-arrow" onClick={handleClick} style={{transform: 'rotate(180deg)' , color: '#00C08B', fontSize: 'clamp(2rem, 5vw, 3rem)' }} />
+                : <Info className="info-card-arrow" onClick={handleClick} style={{ transform: 'rotate(0deg)', color: '#1E1E1E', fontSize: 'clamp(2rem, 5vw, 3rem)' }}/>
+            }
         </div>
     )
 }

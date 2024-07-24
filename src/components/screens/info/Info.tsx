@@ -8,6 +8,7 @@ import cashIcon from '/assets/icons/money-svgrepo-com.svg';
 import candyIcon from '/assets/icons/candy-svgrepo-com.svg';
 import eyeIcon from '/assets/icons/eye-svgrepo-com.svg';
 import './Info.css'
+import './InfoMQuery.css'
 import { VersusItem } from "../../ui/VersusItem/VersusItem";
 
 const jsonProperties = [
@@ -62,16 +63,18 @@ export const Info = () => {
             <div className="info">
                 <div className="properties">
                     <h3 className="info-title">¿EN QUE ME AYUDA?</h3>
-                    {jsonProperties.map((property) => (
-                        <InfoCard name={property.name} description={property.description} icon={property.icon} />
-                    ))}
+                    <div className="properties-items">
+                        {jsonProperties.map((property) => (
+                            <InfoCard name={property.name} description={property.description} icon={property.icon} />
+                        ))}
+                    </div>
                 </div>
                 <div className="versus">
                     <h3 className="versus-title">¿POR QUE ELEGIRNOS?</h3>
                     <div className="versus-items">
                         <div className="versus-items-images">
-                            <img className="versus-image" src="/assets/OnlyMango.png" alt="Mango" />
-                            <img className="versus-image" src="/assets/latasola.png" alt="Lata" />
+                            <img className="versus-image" src="/assets/OnlyMango.png" alt="Mango" style={{ filter: 'drop-shadow(0 0 0.35rem #00C08B)' }} />
+                            <img className="versus-image" src="/assets/latasola.png" alt="Lata" style={{ filter: 'drop-shadow(0 0 0.35rem #FF0048)' }} />
                         </div>
                         <div className="versus-items-text">
                             {versusItems.map((item) => (

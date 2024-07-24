@@ -5,7 +5,7 @@
     align-items: center;
     gap: 8px;
     padding: 8px;
-    height: 100vh;
+    height: fit-content;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -25,6 +25,14 @@
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+}
+.properties-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
 }
 .versus{
     display: flex;
@@ -53,4 +61,15 @@
     max-width: 125px;
     width: 20vw;
     height: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .properties{
+        padding: 16px;
+        gap: 32px;
+    }
+    .properties-items{
+        flex-direction: row;
+        gap: 40px;
+    }   
 }

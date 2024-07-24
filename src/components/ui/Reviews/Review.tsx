@@ -3,7 +3,7 @@ interface IReview {
     name: string
     review: string
 }
-export const Review = ( { name, review }: IReview) => {
+export const Review = ({ name, review }: IReview) => {
 
     return (
         <div className="card">
@@ -29,14 +29,17 @@ export const Review = ( { name, review }: IReview) => {
                 </svg>
             </div>
 
-            <div className="infos">
-                <p className="description">
-                    {review}
-                </p>
-            </div>
+            <div className="content">
 
-            <div className="author">
-                {name}
+                <div className="infos">
+                    <p className="description">
+                        {review}
+                    </p>
+                </div>
+
+                <div className="author">
+                    {name}
+                </div>
             </div>
         </div>
 

@@ -55,3 +55,39 @@
     font-size: clamp(1rem, 3.75vw, 1.5rem); /* Ajuste responsivo */
     padding: 0 8px; /* Añadir padding para mejorar legibilidad en pantallas pequeñas */
 }
+
+.landing-image-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.landing-image-container-desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    display: none;
+}
+
+.landing-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 800px;
+    gap: 8px;
+}
+.landing-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+}

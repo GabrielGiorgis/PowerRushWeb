@@ -1,0 +1,16 @@
+@media screen and (min-width: 1000px) {
+
+    .landing {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .landing-image-container-mobile {
+        display: none;
+    }
+
+    .landing-image-container-desktop {
+        display: flex;
+    }
+
+}
