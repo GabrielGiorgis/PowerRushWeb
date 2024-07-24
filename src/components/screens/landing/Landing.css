@@ -36,6 +36,7 @@
 }
 
 .rating-text {
+    margin: 0;
     max-width: 100%;
     text-align: center;
     font-size: clamp(1rem, 3.75vw, 1.5rem); /* Ajuste responsivo */
@@ -63,6 +64,8 @@
     justify-content: center;
     gap: 8px;
     padding: 8px;
+    width: 80%;
+    height: max-content;
 }
 
 .landing-image-container-desktop {
@@ -70,8 +73,9 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 100%;
+    width: 80vw;
     display: none;
+    height: max-content;
 }
 
 .landing-text-container {
@@ -89,5 +93,6 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: fit-content;
+    width: 50%;
+    height: max-content;
 }

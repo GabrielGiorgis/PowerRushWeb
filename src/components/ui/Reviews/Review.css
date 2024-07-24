@@ -4,9 +4,11 @@
     justify-content: space-between;
     background-color: 1e1e1e;
     padding: 8px 16px;
-    width: max-content;
-    border: 1px solid #00C08B;
+    width: 100%;
+    border: 1px solid #63edc6 !important;
+    background-color: #1e1e1e !important;
   }
+
   
   .stars {
     display: flex;
@@ -16,23 +18,27 @@
   }
   
   .star {
-    width: 3vw;
+    width: 4vw;
     max-width: 35px;
   }
 
   .content{ 
     display: flex;
-    width: 30vw;
-    height: auto; /* tener en cuenta modificar para hacerlo mas dinamico */
+    width: 100%;
+    min-height: max-content; /* tener en cuenta modificar para hacerlo mas dinamico */
     flex-direction: column;
     justify-content: center;
-    padding: 8px;
   }
   
   .description {
+    display: flex;
+    align-items: center;
     font-size: clamp(1rem, 3vw, 1.5rem);
     line-height: 1.625;
     color: #FAFAFA;
+    height: max-content;
+    text-align: start;
+    height: 10vh;
   }
   
   .author {
@@ -45,7 +51,6 @@
 
   .infos{
     display: flex;
-    width: 30vw;
+    width: 100%;
     height: max-content;
-    max-width: max-content;
   }
