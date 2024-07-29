@@ -1,0 +1,48 @@
+.ingredient-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 16px;
+    background-color: #1e1e1e;
+    width: 80%;
+    max-width: 400px;
+    max-height: 100%;
+    border: 1px solid #fafafa;
+    box-shadow: 5px 5px 0px #fafafa;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+.ingredient-card-name {
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 700;
+    padding: 4px;
+}
+
+.desc{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.ingredient-card-description {
+    padding: 4px;
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.ingredient-card-perk {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px;
+    gap: 4px;
+}
+
+.ingredient-card-icon {
+    width: clamp(1rem, 3vw, 3rem);
+    max-width: 35px;
+}
+
+.ingredient-card-perk-text{
+    font-size: clamp(0.7rem, 0.8vw, 2rem);
+}

@@ -10,12 +10,13 @@
     width: 100%;
     box-sizing: border-box;
     color: #fafafa;
-    background-color: hsla(308, 0%, 11%, 1);
+    background-color: hsla(120, 0%, 11%, 1);
     background-image:
-        radial-gradient(at 20% 0%, hsla(241, 0%, 11%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 70%, hsla(308, 100%, 35%, 0.3) 0px, transparent 50%);
+        radial-gradient(at 65% 42%, hsla(99, 0%, 11%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 59%, hsla(0, 100%, 33%, 0.51) 0px, transparent 50%);
 
 }
+
 .properties {
     padding: 16px 16px;
     gap: 16px;
@@ -26,7 +27,8 @@
     width: 100%;
     box-sizing: border-box;
 }
-.properties-items{
+
+.properties-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +36,8 @@
     gap: 16px;
     width: 100%;
 }
-.versus{
+
+.versus {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,17 +45,20 @@
     padding: 16px;
     gap: 16px;
 }
-.versus-items{
+
+.versus-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
-.versus-item-desktop{
+
+.versus-item-desktop {
     display: none;
 }
-.versus-items-images{
+
+.versus-items-images {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
@@ -60,35 +66,40 @@
     gap: 16vw;
     width: auto;
 }
-.versus-image{
+
+.versus-image {
     max-width: 200px;
     width: 20vw;
     height: auto;
 }
 
 @media screen and (min-width: 1000px) {
-    .properties{
+    .properties {
         padding: 16px;
         gap: 32px;
     }
-    .properties-items{
+
+    .properties-items {
         flex-direction: row;
         gap: 40px;
         height: 40vh;
         max-height: 400px;
         align-items: start;
-    }   
-    .versus-items{
+    }
+
+    .versus-items {
         display: none;
     }
-    .versus-item-desktop{
+
+    .versus-item-desktop {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 5vw;
     }
-    .info{
+
+    .info {
         height: 100vh;
         gap: 16px;
         padding: 16px;

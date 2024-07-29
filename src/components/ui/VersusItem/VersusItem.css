@@ -9,13 +9,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-width: max-content;
     text-align: center;
     gap: 4vw;
 }
 .versus-item-text, .versus-item-text2{
-    font-size: clamp(1rem, 1.7vw, 2.5rem);
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     font-weight: 500;
-    width: 100%;
+    width: auto;
     padding: 8px 8px;
 }
 .versus-item-text{
