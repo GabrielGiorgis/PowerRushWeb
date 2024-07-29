@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     padding: 16px 16px;
     background-color: #1e1e1e;
-    width: 80%;
-    max-width: 400px;
-    max-height: 100%;
+    width: clamp(15rem, 15vw, 25rem);
+    height: clamp(20rem, 20vw, 25rem);
     border: 1px solid #fafafa;
     box-shadow: 5px 5px 0px #fafafa;
     margin: 0 auto;

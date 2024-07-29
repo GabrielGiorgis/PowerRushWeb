@@ -39,29 +39,31 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
 .slick-slider {
     width: 100%;
+    max-width: 1500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
 }
 
 .slick-list {
-    max-width: 1250px;
 }
 .slick-track{
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
 }
-
+.slick-dots{
+    display: none !important;
+}
 
