@@ -50,9 +50,9 @@ const versusItems = [
         text2: 'No lo hace'
     },
     {
-        text: '120g de cafeína',
+        text: '120g cafeína',
         icon: energyWhite,
-        text2: '80mg de cafeína'
+        text2: '80mg cafeína'
     }
 
 ]
@@ -81,6 +81,16 @@ export const Info = () => {
                                 <VersusItem text={item.text} icon={item.icon} text2={item.text2} />
                             ))}
                         </div>
+                    </div>
+                    <div className="versus-item-desktop">
+                        <img className="versus-image" src="/assets/OnlyMango.png" alt="Mango" style={{ filter: 'drop-shadow(0 0 0.35rem #00C08B)' }} />
+                        <div className="versus-items-text">
+                            {versusItems.map((item) => (
+                                <VersusItem text={item.text} icon={item.icon} text2={item.text2} />
+                            ))}
+                        </div>
+                        <img className="versus-image" src="/assets/latasola.png" alt="Lata" style={{ filter: 'drop-shadow(0 0 0.35rem #FF0048)' }} />
+
                     </div>
                 </div>
             </div>

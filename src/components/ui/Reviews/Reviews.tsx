@@ -31,20 +31,6 @@ export function Reviews() {
 
 
     return (
-        // <div className="carousel">
-        //     <div className="carousel-button" >
-        //         <ArrowForwardIos onClick={handlePrevious} style={{ transform: 'rotate(180deg)', cursor: 'pointer' }}/>
-        //     </div>
-        //     <div className="carousel-content">
-        //         <Review
-        //             name={reviews[currentIndex].name}
-        //             review={reviews[currentIndex].review}
-        //         />
-        //     </div>
-        //     <div className="carousel-button" >
-        //         <ArrowForwardIos onClick={handleNext} style={{ cursor: 'pointer' }}/>
-        //     </div>
-        // </div>
         <Carousel activeIndex={index} onSelect={handleSelect} controls={false} indicators={false} >
             {reviews.map((review) => (
                 <Carousel.Item>

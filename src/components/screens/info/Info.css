@@ -49,6 +49,9 @@
     align-items: center;
     gap: 8px;
 }
+.versus-item-desktop{
+    display: none;
+}
 .versus-items-images{
     display: inline-flex;
     flex-direction: row;
@@ -58,7 +61,7 @@
     width: auto;
 }
 .versus-image{
-    max-width: 125px;
+    max-width: 200px;
     width: 20vw;
     height: auto;
 }
@@ -71,5 +74,23 @@
     .properties-items{
         flex-direction: row;
         gap: 40px;
+        height: 40vh;
+        max-height: 400px;
+        align-items: start;
     }   
+    .versus-items{
+        display: none;
+    }
+    .versus-item-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    .info{
+        height: 100vh;
+        gap: 16px;
+        padding: 16px;
+    }
 }
