@@ -16,7 +16,7 @@
 }
 
 .landing-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     padding: 4px 0px;
 }
 

@@ -26,7 +26,7 @@
     padding: 4px;
 }
 
-.steps-title h3{
+.steps-title h3, .faqs-title h3{
     font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
@@ -80,17 +80,9 @@
     gap: 8px;
 }
 
-.faqs-title h3{
-    font-size: clamp(1.5rem, 4vw, 2rem);
-}
-
 .faqs-title .faqs-title-icon{
     color: #00C08B;
     font-size: clamp(3rem, 4vw, 5rem);
-}
-
-.faqs-title .faqs-title-text{
-    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .faqs-container .faqs{
