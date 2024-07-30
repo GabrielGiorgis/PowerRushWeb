@@ -52,11 +52,6 @@
     align-items: center;
 }
 
-.slick-slide {
-}
-
-.slick-list {
-}
 .slick-track{
     display: flex;
     justify-content: center;

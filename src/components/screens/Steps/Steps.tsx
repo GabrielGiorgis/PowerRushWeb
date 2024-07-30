@@ -1,6 +1,5 @@
-import { Looks3Rounded, Looks3Sharp, LooksOneRounded, LooksOneSharp, LooksTwoRounded, LooksTwoSharp, NotListedLocationSharp, PlayArrowRounded, PlayArrowSharp } from "@mui/icons-material"
+import { Looks3Sharp, LooksOneSharp, LooksTwoSharp, NotListedLocationSharp, PlayArrowSharp } from "@mui/icons-material"
 import './Steps.css'
-import { useState } from "react"
 import { FaqCard } from "../../ui/FaqCard/FaqCard"
 
 const steps = [
