@@ -1,0 +1,39 @@
+.faq-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0px;
+}
+
+.faq-card-line-question, .faq-card-line-answer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px;
+}
+
+.faq-card-line-question{
+    color: #fafafa;
+}
+
+.faq-card-line-answer{
+    color: #1e1e1e;
+    background-color: #00C08B;
+}
+
+.faq-card-question, .faq-card-answer{
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 500;
+}
+
+.faq-card-line-answer .faq-card-icon, .faq-card-line-question .faq-card-icon{
+    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+    transform: rotate(-90deg);
+}

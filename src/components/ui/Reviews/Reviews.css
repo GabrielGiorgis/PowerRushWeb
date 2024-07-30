@@ -1,29 +1,15 @@
-.carousel {
-    display: inline-flex;
-    flex-direction: row;
+.reviews{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4px;
-    min-width: 100% !important;
-    height: fit-content;
+    background-color: 1e1e1e;
+    max-width: 100%;
 }
 
-.carousel-button {
-    display: flex;
+.reviews .review{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: #00C08B;
-    padding: 8px; /* Añadir padding para mejorar la accesibilidad en pantallas táctiles */
-}
-
-.slide{
-    max-width: min-content !important;
-    width: 100% !important;
-}
-
-.carousel-content {
-    display: inline-flex;
-    width: 100%;
-    height: max-content;
-    padding: 8px 16px;
-    text-align: start;
 }

@@ -1,8 +1,7 @@
-import { useState } from 'react';
+
 import './Reviews.css';
 import { Review } from './Review';
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Slider from 'react-slick';
 
 const reviews = [
     {
@@ -23,23 +22,32 @@ const reviews = [
 ];
 
 export function Reviews() {
-    const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex: number) => {
-        setIndex(selectedIndex);
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        initialSlide: 0,
+        pauseOnHover: true,
     };
 
-
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect} controls={false} indicators={false} >
-            {reviews.map((review) => (
-                <Carousel.Item>
-                    <Review
-                        name={review.name}
-                        review={review.review}
-                    />
-                </Carousel.Item>
-            ))}
-        </Carousel>
+        <div className="reviews">
+            <Slider {...settings} >
+                {reviews.map((review) => (
+                    <div className='review'>
+                        <Review
+                            name={review.name}
+                            review={review.review}
+                        />
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 }

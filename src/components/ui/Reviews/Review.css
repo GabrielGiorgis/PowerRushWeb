@@ -1,12 +1,11 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background-color: 1e1e1e;
-    padding: 8px 16px;
-    width: 100%;
-    border: 1px solid #63edc6 !important;
-    background-color: #1e1e1e !important;
+    max-width: 80%;
+    border: 1px solid #63edc6;
+    background-color: #1e1e1e;
   }
 
   
@@ -25,8 +24,7 @@
 
   .content{ 
     display: flex;
-    width: 100%;
-    height: 20vh; /* tener en cuenta modificar para hacerlo mas dinamico */
+    max-width: 100%;
     flex-direction: column;
     justify-content: space-between;
     padding: 8px;

@@ -24,7 +24,8 @@ export const InfoCard = ({ name, description, icon }: IInfoCard) => {
             </div>
             {show ?
                 <Info className="info-card-arrow" onClick={handleClick} style={{transform: 'rotate(180deg)' , color: '#00C08B', fontSize: 'clamp(2rem, 5vw, 3rem)' }} />
-                : <Info className="info-card-arrow" onClick={handleClick} style={{ transform: 'rotate(0deg)', color: '#1E1E1E', fontSize: 'clamp(2rem, 5vw, 3rem)' }}/>
+                : 
+                <Info className="info-card-arrow" onClick={handleClick} style={{ transform: 'rotate(0deg)', color: '#1E1E1E', fontSize: 'clamp(2rem, 5vw, 3rem)' }}/>
             }
         </div>
     )
