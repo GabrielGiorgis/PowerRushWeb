@@ -30,10 +30,11 @@ export function Reviews() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         arrows: false,
         initialSlide: 0,
         pauseOnHover: true,
+        centerMode: true,
     };
 
     return (

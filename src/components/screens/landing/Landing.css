@@ -68,7 +68,7 @@
     justify-content: center;
     gap: 8px;
     padding: 8px;
-    width: 80%;
+    width: 100%;
     height: max-content;
 }
 
@@ -79,7 +79,6 @@
     gap: 8px;
     max-width: 100%;
     display: none;
-    height: max-content;
 }
 
 .landing-text-container {

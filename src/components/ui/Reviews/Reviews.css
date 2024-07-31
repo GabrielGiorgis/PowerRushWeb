@@ -3,13 +3,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: 1e1e1e;
-    max-width: 100%;
-}
-
-.reviews .review{
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
