@@ -40,19 +40,19 @@ const versusItems = [
         text2: '$2.200 x lata'
     },
     {
-        text: '0g de azúcar',
+        text: 'Azúcar 0g',
         icon: candyIcon,
-        text2: '27.5g de azúcar'
+        text2: 'Azúcar 27,5g'
     },
     {
-        text: 'Protege tus ojos',
+        text: 'Ojos protegidos',
         icon: eyeIcon,
         text2: 'No lo hace'
     },
     {
-        text: '120g cafeína',
+        text: 'Cafeína 120g',
         icon: energyWhite,
-        text2: '80mg cafeína'
+        text2: 'Cafeína 80mg'
     }
 
 ]

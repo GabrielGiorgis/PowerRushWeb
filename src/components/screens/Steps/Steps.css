@@ -1,18 +1,19 @@
-.steps-faqs-container{
-    background-color: hsla(120, 0%, 11%, 1);
+.steps-faqs-container {
+    background-color: hsla(322, 0%, 11%, 1);
     background-image:
-        radial-gradient(at 30% 31%, hsla(99, 0%, 11%, 1) 0px, transparent 50%),
-        radial-gradient(at 96% 57%, hsla(308, 100%, 35%, 0.5) 0px, transparent 50%);
+        radial-gradient(at 97% 42%, hsla(14, 0%, 11%, 1) 0px, transparent 50%),
+        radial-gradient(at 14% 86%, hsla(241, 0%, 11%, 1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(322, 100%, 38%, 0.5) 0px, transparent 50%);
     color: #fafafa;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 8px;
+    padding: 16px;
 }
 
-.steps-container{
+.steps-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,24 +21,26 @@
     gap: 24px;
     width: 100%;
     max-width: 100%;
+    padding: 8px;
 }
 
-.steps-title{
+.steps-title {
     padding: 4px;
 }
 
-.steps-title h3, .faqs-title h3{
+.steps-title h3,
+.faqs-title h3 {
     font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
-.steps{
+.steps {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.steps-item{
+.steps-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,22 +49,22 @@
     padding: 8px;
 }
 
-.steps .steps-item-icon{
+.steps .steps-item-icon {
     color: #00C08B;
     font-size: clamp(3rem, 4vw, 5rem);
 }
 
-.steps-item-text{
+.steps-item-text {
     font-size: clamp(1.1rem, 1.3vw, 2.5rem);
     font-weight: 500;
 }
 
-.steps-item-arrow{
+.steps-item-arrow {
     color: #fafafa;
     font-size: clamp(3rem, 3vw, 3rem);
 }
 
-.faqs-container{
+.faqs-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,10 +72,10 @@
     gap: 16px;
     width: 100%;
     max-width: 100%;
-    padding: 4px 0px;
+    padding: 8px;
 }
 
-.faqs-title{
+.faqs-title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,12 +83,12 @@
     gap: 8px;
 }
 
-.faqs-title .faqs-title-icon{
+.faqs-title .faqs-title-icon {
     color: #00C08B;
     font-size: clamp(3rem, 4vw, 5rem);
 }
 
-.faqs-container .faqs{
+.faqs-container .faqs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,11 +100,12 @@
 
 
 @media screen and (max-width: 680px) {
-    .steps{
+    .steps {
         flex-direction: column;
         align-items: center;
     }
-    .steps .steps-item-arrow{
+
+    .steps .steps-item-arrow {
         display: none;
     }
 }

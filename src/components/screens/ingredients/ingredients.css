@@ -5,10 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
-    background-color: hsla(120, 0%, 11%, 1);
-    background-image:
-        radial-gradient(at 30% 31%, hsla(99, 0%, 11%, 1) 0px, transparent 50%),
-        radial-gradient(at 96% 57%, hsla(308, 100%, 35%, 0.5) 0px, transparent 50%);
+    background-color: #1e1e1e;
     color: #fafafa;
     padding: 16px;
 }

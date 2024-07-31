@@ -16,8 +16,7 @@
 .versus-item-text, .versus-item-text2{
     font-size: clamp(1rem, 1.5vw, 2.5rem);
     font-weight: 500;
-    width: auto;
-    padding: 8px 8px;
+    width: 100%;
 }
 .versus-item-text{
     text-align: end;

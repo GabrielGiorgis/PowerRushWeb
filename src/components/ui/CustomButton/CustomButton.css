@@ -3,13 +3,13 @@
     background-color: #00C08B;
     padding: 4px 8px;
     width: auto;
-    max-width: fit-content;
     text-align: center;
     box-shadow: 2px 2px 0px 0px #FAFAFA;
     border: 1px solid #FAFAFA;
     color : #1e1e1e;
     transition: ease-in-out 0.2s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .custom-button:hover{
@@ -22,7 +22,18 @@
 .custom-button p{
     margin: 0;
     text-align: center;
-    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-size: clamp(1rem, 1.9vw, 3.5rem);
     font-weight: 800;
     text-transform: uppercase;
+}
+
+.custom-button a{
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: ease-in-out 0.2s;
+}
+
+.custom-button a :hover{
+    color: #00C08B;
+    transition: ease-in-out 0.2s;
 }
