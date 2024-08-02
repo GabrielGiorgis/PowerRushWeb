@@ -32,9 +32,9 @@ export const Review = ({ name, review }: IReview) => {
             <div className="content">
 
                 <div className="infos">
-                    <p className="description">
+                    <textarea readOnly className="description">
                         {review}
-                    </p>
+                    </textarea>
                 </div>
 
                 <div className="author">

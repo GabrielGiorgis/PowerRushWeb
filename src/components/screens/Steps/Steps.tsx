@@ -32,6 +32,10 @@ const faqs = [
     {
         question: '¿Debo tomarlo todos los días?',
         answer: 'No. El efecto de Power Rush es instantaneo y no es necesiario tomarlo todos los dias para que haga mas efecto'
+    },
+    {
+        question: '¿Debo tomarlo todos los días?',
+        answer: 'No. El efecto de Power Rush es instantaneo y no es necesiario tomarlo todos los dias para que haga mas efecto'
     }
 ]
 

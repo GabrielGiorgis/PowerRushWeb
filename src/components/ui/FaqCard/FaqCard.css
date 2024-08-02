@@ -1,27 +1,29 @@
 .faq-card{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
     gap: 8px;
     cursor: pointer;
-    padding: 4px 0px;
 }
 
 .faq-card-line-question, .faq-card-line-answer{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 8px;
     width: 100%;
     padding: 8px;
+    text-align: start;
 }
 
 .faq-card-line-question{
     color: #fafafa;
+    background-color: #1e1e1e;
 }
+
 
 .faq-card-line-answer{
     color: #1e1e1e;
@@ -29,11 +31,23 @@
 }
 
 .faq-card-question, .faq-card-answer{
-    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-size: clamp(1rem, 1.3vw, 2.5rem);
     font-weight: 500;
 }
 
 .faq-card-line-answer .faq-card-icon, .faq-card-line-question .faq-card-icon{
     font-size: clamp(1.5rem, 1.8vw, 2.5rem);
     transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 680px) {
+    .faq-card{
+        width: 49%;
+    }
+
+    .faq-card-line-question:hover{
+        transition: all 0.2s ease-in-out;
+        box-shadow: 2px 2px 0px rgba(0, 192, 139, 0.5);
+        box-shadow: 2px 2px 0px rgba(0, 192, 139, 1);
+    }
 }

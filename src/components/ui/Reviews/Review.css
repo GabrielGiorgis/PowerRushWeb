@@ -39,6 +39,12 @@
     height: max-content;
     text-align: start;
     height: auto;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    width: 100%;
   }
   
   .author {
@@ -56,6 +62,6 @@
     margin: 0;
   }
 
-  .infos p{
+  .infos textarea{
     margin: 0;
   }

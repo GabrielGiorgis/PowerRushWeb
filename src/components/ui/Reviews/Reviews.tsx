@@ -34,6 +34,7 @@ export function Reviews() {
         arrows: false,
         initialSlide: 0,
         pauseOnHover: true,
+        pauseOnTouch: true,
         centerMode: true,
     };
 

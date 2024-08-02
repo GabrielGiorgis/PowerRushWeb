@@ -1,9 +1,10 @@
+import { ReactElement } from 'react'
 import './IngredientCard.css'
 
 interface IIngredientCard {
     name: string
     description: string
-    icon: string
+    icon: ReactElement
     perk: string
 }
 
@@ -15,7 +16,7 @@ export const IngredientCard = ({ name, description, icon, perk }: IIngredientCar
                 <p className="ingredient-card-description">{description}</p>
             </div>
             <div className="ingredient-card-perk">
-                <img className="ingredient-card-icon" src={icon} />
+                {icon}
                 <p className="ingredient-card-perk-text">{perk}</p>
             </div>
         </div>

@@ -25,7 +25,7 @@
     align-items: center;
     width: 100vw;
     max-width: 100%;
-    padding: 8px 16px;
+    padding: 4px 16px;
     box-sizing: border-box;
     background-color: #1e1e1e;
 }
@@ -35,7 +35,7 @@
 }
 
 .header-logo-mobile{
-    width: clamp(3rem, 5vw, 6rem);
+    width: clamp(2rem, 4vw, 6rem);
 }
 
 .header-logo{

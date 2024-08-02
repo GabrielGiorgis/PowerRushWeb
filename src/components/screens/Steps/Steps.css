@@ -55,7 +55,7 @@
 }
 
 .steps-item-text {
-    font-size: clamp(1.1rem, 1.3vw, 2.5rem);
+    font-size: clamp(0.8rem, 1.3vw, 2.5rem);
     font-weight: 500;
 }
 
@@ -72,7 +72,6 @@
     gap: 16px;
     width: 100%;
     max-width: 100%;
-    padding: 8px;
 }
 
 .faqs-title {
@@ -90,22 +89,30 @@
 
 .faqs-container .faqs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 100%;
     text-align: center;
+    gap: 4px;
 }
 
 
 @media screen and (max-width: 680px) {
     .steps {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        width: fit-content;
     }
 
     .steps .steps-item-arrow {
         display: none;
+    }
+
+    .faqs{
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }

@@ -36,13 +36,13 @@
     align-items: center;
     padding: 4px;
     gap: 4px;
+    color: #00C08B;
 }
 
-.ingredient-card-icon {
-    width: clamp(1rem, 3vw, 3rem);
-    max-width: 35px;
+.ingredient-card-perk *{
+    font-size: clamp(0.7rem, 0.9vw, 1.8rem);
 }
 
-.ingredient-card-perk-text{
-    font-size: clamp(0.7rem, 0.8vw, 2rem);
+.ingredient-card-perk .ingredient-card-perk-text{
+    width: auto;
 }

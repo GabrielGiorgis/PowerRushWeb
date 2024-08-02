@@ -4,37 +4,77 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ingredients.css';
 import Slider from "react-slick";
-import eyeIcon from '/assets/icons/eye-svgrepo-com.svg';
-import energyWhite from '/assets/icons/energy-svgrepo-white.svg';
-import focus from '/assets/icons/focus-point-845-svgrepo-com.svg';
-import meditation from '/assets/icons/meditation-svgrepo-com.svg';
-
+import BoltIcon from '@mui/icons-material/Bolt';
+import { CableRounded, CoffeeRounded, FastfoodRounded, FilterCenterFocusRounded, FilterVintageRounded, FitnessCenterRounded, HealingRounded, KeyboardCommandKeyRounded, RemoveRedEyeRounded, TipsAndUpdatesRounded } from '@mui/icons-material';
 
 const infoComponents = [
     {
         name: 'L-LUTEINA',
         description: 'Flavonoide con propiedades antioxidantes y anti inflamatorias que protegen la retina humana de las radiaciones ultravioletas del sol',
-        icon: eyeIcon,
+        icon: <RemoveRedEyeRounded />,
         perk: 'PROTECCION VISUAL',
+    },
+    {
+        name: 'CAFEINA',
+        description: 'Posee propiedades estimulantes, antioxidantes, antiinflamatorias y ergogénicas.',
+        icon: <CoffeeRounded />,
+        perk: 'MENOR CANSANCIO',
     },
     {
         name: 'L-TEANINA',
         description: 'Aminoácido que influye sobre el estado de animo, el sueño y el cortisol, ayudando asi, a lidiar con el estrés',
-        icon: meditation,
-        perk: 'TRANQUILIDAD',
+        icon: <FilterVintageRounded />,
+        perk: 'MENOS ESTRES',
     },
     {
         name: 'GINSENG',
         description: 'Planta medicinal que actúa directamente en el hipocampo, responsable del funcionamiento de la memoria, mejorando la atención y la concentración',
-        icon: focus,
+        icon: <FilterCenterFocusRounded />,
         perk: 'CONCENTRACION',
     },
     {
         name: 'TAURINA',
         description: 'Aminoácido que contribuye al tratamiento de la fatiga y los trastornos musculares.',
-        icon: energyWhite,
+        icon: <BoltIcon />,
         perk: 'ENERGIA',
+    },
+    {
+        name: 'COLINA',
+        description: 'Nutriente esencial y fundamental para el desarrollo del sistema nervioso, mejora las funciones cognitivas',
+        icon: <TipsAndUpdatesRounded />,
+        perk: 'DESARROLLO COGNITIVO',
+    },
+    {
+        name: 'L-TIROSINA',
+        description: 'Aminoácido que contribuye al metabolismo, a la producción de catecolaminas y el correcto funcionamiento del sistema nervioso central',
+        icon: <CableRounded />,
+        perk: 'RENDIMIENTO',
+    },
+    {
+        name: 'VITAMINA B3',
+        description: 'Vitamina importante para el metabolismo energético, la salud de la piel y el aparato digestivo.',
+        icon: <FastfoodRounded />,
+        perk: 'DIGESTION',
+    },
+    {
+        name: 'VITAMINA B6',
+        description: 'Vitamina que contribuye a la formacion de globulos rojos y neurotransmisores.',
+        icon: <HealingRounded />,
+        perk: 'SALUD',
+    },
+    {
+        name: 'VITAMINA B12',
+        description: 'Vitamina que ayuda al manteminimiento del sistema nervioso.',
+        icon: <KeyboardCommandKeyRounded />,
+        perk: 'PREVENCION CARDIACA',
+    },
+    {
+        name: 'L-CARNITINA',
+        description: 'Aminoácido que ayuda a fomentar la resistencia, quemar grasa y acelerar la recuperación muscular.',
+        icon: <FitnessCenterRounded />,
+        perk: 'RECUPERACION MUSCULAR',
     }
+
 ];
 
 export const Components = () => {
@@ -42,7 +82,7 @@ export const Components = () => {
         dots: false,
         infinite: true,
         speed: 1000,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -51,25 +91,23 @@ export const Components = () => {
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: false,
-
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 870,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     initialSlide: 0,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -82,7 +120,8 @@ export const Components = () => {
         <div className="ingredients">
             <div className="ingredients-text">
                 <p className="ingredients-info">
-                    Contiene un conjunto de nutrientes y nootrópicos que te dan distintos <span>beneficios</span>, como una <span>hidratación visual</span>, <span>concentración</span> y  <span>energía</span> sin alterar tu <span>tranquilidad</span>.
+                    <span className='title-ingredients'>¿Que contiene Power Rush?</span><br/>
+                    Contiene <span>11 nootrópicos</span> que te aportan <span>energía</span>, <span>concentración</span> y <span>salud ocular</span>
                 </p>
             </div>
             <div className="ingredients-cards">
