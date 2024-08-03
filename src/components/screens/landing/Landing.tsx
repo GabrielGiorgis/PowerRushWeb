@@ -13,7 +13,7 @@ export const Landing = () => {
                 <p className="rating-text">+ 10.000 personas potenciadas</p>
             </div>
             <div className="landing-image-container-mobile">
-                <img className="landing-image" src="/assets/Mango.png" alt="landing" />
+                <img className="landing-image" src="/assets/Mango.webp" alt="landing" />
                 <p className="landing-description">Una combinacion ideal de vitaminas, nootropicos y nutrientes para un mejor rendimiento</p>
                 <CustomButton />
                 <Reviews />
