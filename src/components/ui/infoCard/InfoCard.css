@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: -webkit-fill-available;
     padding: 8px 16px;
     background-color: #00C08B;
     box-shadow: 4px 4px 0px #FAFAFA;
@@ -18,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: -webkit-fill-available;
     padding: 8px 16px;
     background-color: #1e1e1e;
     box-shadow: 4px 4px 0px #FAFAFA;

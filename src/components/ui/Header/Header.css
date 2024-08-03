@@ -31,11 +31,15 @@
 }
 
 .header-logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     left: 0;
 }
 
 .header-logo-mobile{
-    width: clamp(2rem, 4vw, 6rem);
+    width: clamp(1.5rem, 3vw, 5rem);
 }
 
 .header-logo{
@@ -45,6 +49,11 @@
 
 .header-button-container{
     right: 0;
+}
+
+.promo-text a{
+    text-decoration: underline;
+    color: #1e1e1e;
 }
 
 @media screen and (min-width: 700px) {
